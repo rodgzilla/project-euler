@@ -50,6 +50,5 @@ while ratio > 0.1:
     primes += primes_on_border(i)
     ratio = primes / total
     i += 1
-    
-print(primes, total, 2 * (i - 1) + 1)
+
 print(2 * (i - 1) + 1)
