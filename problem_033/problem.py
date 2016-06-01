@@ -17,6 +17,3 @@ for num, denum in res:
     final_denum *= denum
 
 print(Fraction(final_num, final_denum).denominator)
-            
-    
-            
