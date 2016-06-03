@@ -76,5 +76,3 @@ print(len(valid_sets))
 res = min(valid_sets, key=sum)
 print(res)
 print(sum(res))
-
-
