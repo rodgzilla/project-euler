@@ -8,15 +8,16 @@ valid_numbers = set(range(1, 100000001))
 i = 1
 j = 1
 prod = 1
+print(i)
 while prod <= 100000000 or j != 1:
     if prod > 100000000 or i < j:
+        print(i)
         i += 1
         j = 1
         prod = i * j
         continue
-    print(i)
     if i + j not in primes:
-        valid_numbers.remove(prod)
+        valid_numbers.discard(prod)
     j += 1
     prod = i * j
 print(sum(valid_numbers))
